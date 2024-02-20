@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fgaf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0003-tenant/tkrw-pr712-0075-0003-app/devfile-sample-fgaf@sha256:253e6e6714c8fb461261dda2b0c26035800f962ba37003693d5a4f7c034159e1
+        name: my-nodejs
+        resources: {}
+status: {}
